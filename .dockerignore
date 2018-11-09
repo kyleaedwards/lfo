@@ -1,0 +1,9 @@
+# Ignore .git and .cache folders
+.git
+.cache
+
+# Ignore build directory
+build
+
+# Ignore node modules
+node_modules
