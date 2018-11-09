@@ -17,7 +17,10 @@ const query = gql`
         title
         label
       }
-      images
+      images {
+        handle
+        fileName
+      }
     }
     projects {
       id
@@ -57,7 +60,11 @@ export default () => (
           <h2>Notes</h2>
           <p className="expos">A collection of notes from the past <strong>{times}</strong>, spanning <strong>{numProjects}</strong> projects and <strong>{numTags}</strong> tags.</p>
           <div className="posts">
-            { notes.map((note, key) => (<Note note={note} key={key} />)) }
+            {
+              notes
+                .sort((a, b) => b.createdAt < a.createdAt ? -1 : 1)
+                .map((note, key) => (<Note note={note} key={key} />))
+            }
           </div>
         </div>
       )
