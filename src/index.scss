@@ -294,6 +294,7 @@ footer {
 .single {
   h2 {
     position: relative;
+    line-height: 1.25;
 
     &:after {
       position: absolute;
@@ -387,6 +388,7 @@ footer {
   .post {
     position: static;
     padding: 25px 0;
+    display: block;
   }
 
   .post-meta {
@@ -398,6 +400,18 @@ footer {
     .post-timestamp {
       position: static;
     }
+  }
+
+  .note-images img {
+    margin-top: 1rem;
+
+    &:first-of-type {
+      margin-top: 0;
+    }
+  }
+
+  .project-links {
+    font-size: 1.75rem;
   }
 
   .post-body p {
