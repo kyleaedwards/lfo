@@ -1,0 +1,15 @@
+{
+  "AWSEBDockerrunVersion": "1",
+  "Image": {
+    "Name": "605028258457.dkr.ecr.us-east-1.amazonaws.com/kedwio:latest",
+    "Update": "true"
+  },
+  "Ports": [
+    {
+      "HostPort": "8080",
+      "ContainerPort": "80"
+    }
+  ],
+  "Volumes": [],
+  "Logging": "/var/log/nginx"
+}

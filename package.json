@@ -4,6 +4,7 @@
   "description": "Website for recording long-term personal development",
   "main": "index.js",
   "license": "MIT",
+  "homepage": "http://www.kedw.io/",
   "scripts": {
     "deploy": "now && now alias",
     "start": "PORT=7181 react-scripts start",
