@@ -86,6 +86,14 @@ h1 {
   padding-left: 3rem;
   margin-bottom: 1.75rem;
 
+  svg {
+    position: absolute;
+    top: -24px;
+    left: -15px;
+    width: 75px;
+    height: 75px;
+  }
+
   a {
     color: $color-text-accent;
     text-decoration: none;
@@ -353,8 +361,16 @@ footer {
 
   #title {
     margin-bottom: 0;
-    width: 168px;
+    width: 185px;
     margin: 0 auto;
+
+    svg {
+      position: absolute;
+      top: -25px;
+      left: -22px;
+      width: 80px;
+      height: 80px;
+    }
   }
 
   .nav {
